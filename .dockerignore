@@ -1,0 +1,13 @@
+.idea
+credentials.json
+token.pickle
+tmp
+venv
+dist/
+build/
+*.egg-info
+*.DS_Store
+.eggs
+temp/
+*.vscode
+*.code-workspace
