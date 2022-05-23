@@ -10,7 +10,7 @@ COPY common /common
 COPY granule_ingester/granule_ingester /sdap/granule_ingester
 COPY granule_ingester/setup.py /sdap/setup.py
 COPY granule_ingester/requirements.txt /sdap/requirements.txt
-COPY granule_ingester/conda-requirements.txt /sdap/conda-requirements.txt
+COPY granule_ingester/conda-requirements.yml /sdap/conda-requirements.yml
 COPY granule_ingester/docker/install_nexusproto.sh /install_nexusproto.sh
 COPY granule_ingester/docker/entrypoint.sh /entrypoint.sh
 

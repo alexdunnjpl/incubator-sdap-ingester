@@ -6,7 +6,7 @@ with open('requirements.txt') as f:
     pip_requirements = f.readlines()
 
 try:
-    check_call(['conda', 'install', '-y', '-c', 'conda-forge', '--file', 'conda-requirements.txt'])
+    check_call(['conda', 'env', 'create', '--force', '--file', 'conda-requirements.yml'])
 except (CalledProcessError, IOError) as e:
     raise EnvironmentError("Error installing conda packages", e)
 

@@ -1,0 +1,27 @@
+name: incubator-sdap-ingester
+channels:
+  - conda-forge
+dependencies:
+  - numpy==1.19.5
+  - scipy
+  - netcdf4==1.5.3
+  - pandas==1.0.4
+  - pytz==2019.3
+  - xarray
+  - pyyaml==5.3.1
+  - requests==2.23.0
+  - aiohttp==3.6.2
+  - tenacity
+  - pip:
+    - cassandra-driver==3.23.0
+    - aiomultiprocess==0.7.0
+    - aioboto3==8.3.0
+    - tblib==1.6.0
+    - pysolr==3.9.0
+    - kazoo==2.8.0
+    - aio-pika==6.7.1
+    - elasticsearch[async]
+    - requests==2.27.1
+    - urllib3==1.26.2
+    - pytest
+    - ../common

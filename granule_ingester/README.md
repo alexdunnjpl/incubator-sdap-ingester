@@ -13,8 +13,8 @@ Python 3.7
 
 ## Building the service
 From `incubator-sdap-ingester`, run:
-    $ cd common && python setup.py install
-    $ cd ../granule_ingester && python setup.py install
+    $ cd ../granule_ingester
+    $ python3 setup.py install
     
 
 ## Launching the service
@@ -23,11 +23,12 @@ From `incubator-sdap-ingester`, run:
     $ python granule_ingester/granule_ingester/main.py -h
     
 ## Running the tests
-From `incubator-sdap-ingester`, run:
+From `incubator-sdap-ingester/granule_ingester`, run:
 
-    $ cd common && python setup.py install
-    $ cd ../granule_ingester && python setup.py install
-    $ pip install pytest && pytest
+    $ python3 setup.py install
+    $ conda env activate incubator-sdap-ingester
+    $ ./docker/install_nexusproto.sh
+    $ pytest
     
 ## Building the Docker image
 From `incubator-sdap-ingester`, run:
